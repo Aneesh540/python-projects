@@ -1,26 +1,17 @@
-class Mobile:
+class Test:
 
-	price=0
-	model='Lumia 1600'
+	Weight=89
+	Blood_group='B+'
+	__BP=None				# Private member
+	def __init__(self):
+		self.__BP='Hidden attribute'
 
-	def __init__(self,price,model):
-		
-		self.price=int(input('enter price:'))
-		self.model=input('enter model:')
-		self.price += 5
-
-	def __str__(self):
-		print('object is :')	
 	def display(self):
-		print('{}!model:{}'.format(self.price,self.model))
-		
-foo=Mobile(35,'lumia 1600')
-foo.height='in metres'
-foo.display()
-z=vars(foo)   	  #disply all attributes
-print(z)
-del(foo.price)    #delete the attribute price
-print(z)
-print(Mobile.__init__)
-print(Mobile.__doc__)
-print(foo)
+		return self.__BP	#only method(known) to print private member 
+							#is defining a method like this'''
+
+foo=Test()	
+
+print(foo.Weight)
+print(foo.Blood_group)
+print(foo.display())	
