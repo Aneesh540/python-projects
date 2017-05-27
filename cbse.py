@@ -1,17 +1,16 @@
+""" a static method in pyhton is a method that does not obey
+	the usual convection in which self, an instance of the class 
+	is first argument to the method
+
+	it is just like any other method of class but canbe called without
+	creating the instance of the class
+	@staticmethod is convection for using it."""
+
 class Test:
+	@staticmethod
+	def display(x):
+		return x*x
 
-	Weight=89
-	Blood_group='B+'
-	__BP=None				# Private member
-	def __init__(self):
-		self.__BP='Hidden attribute'
+bar=Test()
+print(bar.display(5))
 
-	def display(self):
-		return self.__BP	#only method(known) to print private member 
-							#is defining a method like this'''
-
-foo=Test()	
-
-print(foo.Weight)
-print(foo.Blood_group)
-print(foo.display())	
