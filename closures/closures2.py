@@ -8,12 +8,13 @@ def outer_func(msg):
 	message=msg
 
 	def inner_func():
-		print(message)
+		# print(message)   
 		print(msg)
 
 	return inner_func	
 
 hello=outer_func('hello')
+print('hello bcomes %s ' %(hello.__name__))
 hello()
 
 
@@ -40,13 +41,3 @@ add_logger(3,4)
 sub_logger(9,10)
 sub_logger(33,-99)	
 	
-
-
-
-
-
-
-
-
-
-
