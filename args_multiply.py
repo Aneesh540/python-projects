@@ -3,7 +3,7 @@ import sys
 """
 This is just a basic example of command line arguments in python,
 if you want you can use it in your own code and to execute this script
-you must use "python main.py (arg1) (arg2)".
+you must use "python args_multiply.py (arg1) (arg2)".
 """
 
 
