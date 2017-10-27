@@ -1,5 +1,6 @@
 # *python-projects* :snake: :ghost:
 ### *This repository contains examples of python from various sources which include*
+Use Pycharm IDE:)
 - [x] basic python code
 - [x] hackerrank problems
 - [x] fluent-python book problems 
